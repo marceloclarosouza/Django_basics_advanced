@@ -1,0 +1,15 @@
+###Criar um ambiente virtual Python
+###
+d:
+cd Django_basics_advanced
+mkdir projTeste
+cd projTeste
+python -m venv venv ##criar o ambiente propriamente dito
+cd venv
+cd Scripts
+activate ##ativando o ambiente virtual
+cd..
+pip install django ## instalar o django no env
+python manage.py runserver    ###executar o servidor
+
+

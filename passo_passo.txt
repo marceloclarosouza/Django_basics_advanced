@@ -1,0 +1,8 @@
+Configurar a venv
+iniciar o servidor
+criar a URL em urls.py
+criar o novo arquivo views.py
+	dentro de view criar as funcoes request de cada url
+	toda view em django tem que retornar um HttpResponse()
+
+no arquivo urls importar as funções views ##(Exe from .views import hello)
