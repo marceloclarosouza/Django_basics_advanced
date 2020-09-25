@@ -25,7 +25,11 @@ python manage.py runserver
 ## ctrl + C to stop
 ##
 ##
-##
+##criar app para o projeto
+com o servidor desligado
+python manage.py startapp cliente
+ativar servidor
+
 
 
 

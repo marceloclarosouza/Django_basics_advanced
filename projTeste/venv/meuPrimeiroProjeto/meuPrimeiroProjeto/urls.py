@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from .views import hello
 from .views import articles
+from .views import fname
 
 urlpatterns = [
     path('articles/<int:year>/', articles),
     path('hello/', hello),#o hello é a request
+    path('pessoa/<str:nome>', fname),
     path('admin/', admin.site.urls),
 ]

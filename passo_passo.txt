@@ -6,3 +6,6 @@ criar o novo arquivo views.py
 	toda view em django tem que retornar um HttpResponse()
 
 no arquivo urls importar as funções views ##(Exe from .views import hello)
+
+criar apps para o projeto python manage.py startapp cliente
+os models são desenvolvido em models do "cliente"
