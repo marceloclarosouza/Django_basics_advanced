@@ -29,17 +29,9 @@ python manage.py runserver
 com o servidor desligado
 python manage.py startapp cliente
 ativar servidor
-
-
-
-
-
-
 ### criar uma migration
 com servido desligado 
 python manage.py makemigrations##criar o model no BD
 python manage.py migrate##aplicar o model BD
-
-
 ##criar um super usuário
 python manage.py createsuperuser

@@ -8,4 +8,24 @@ criar o novo arquivo views.py
 no arquivo urls importar as funções views ##(Exe from .views import hello)
 
 criar apps para o projeto python manage.py startapp cliente
-os models são desenvolvido em models do "cliente"
+os models são desenvolvido em models do "cliente"## os models são as classses
+registrar a aplicação em Installed_apps (settings) 'cliente',
+para o servidor e fazer a migration do Person para o banco de dados
+python manage.py makemigrations##criar o model no BD
+python manage.py migrate##aplicar o model BD
+com isso a tabela do banco de dados foi criada e stá pronto para armazenar novos clientes
+
+
+###Django admin
+stop o servido e criar o superusuário:
+python manage.py createsuperuser
+start servidor
+no arquivo admin.py (clientes) - importar o Person de models para admin
+
+###Templates
+em settings, TEMPLATES, DIRS ['nome de onde sera armazenado os templates']
+na pasta Global meuPrimeiroProjeto criar o diretorio meus_templates
+dentro de meus templates criar um arquivo index.html
+em index.html digite html:5 + tab ##criar o template base de html automatico
+crie um index h1 ola mundo
+em views primeiro projeto.py importar from django.shortcuts import render ### renderizar as imagens no site 
