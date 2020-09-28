@@ -28,4 +28,13 @@ na pasta Global meuPrimeiroProjeto criar o diretorio meus_templates
 dentro de meus templates criar um arquivo index.html
 em index.html digite html:5 + tab ##criar o template base de html automatico
 crie um index h1 ola mundo
-em views primeiro projeto.py importar from django.shortcuts import render ### renderizar as imagens no site 
+em views primeiro projeto.py importar from django.shortcuts import render ### renderizar as imagens no site
+
+###Arquivos estaticos
+Em settings, criar a variável STATICFILES_DIRS = []
+criar a pasta estatico na raíz de meuPrimeiroProjeto
+dentyo da pasta estatico criar o arquivo style.css
+carregar arquivos estaticos em template.html usando {% load static %}
+
+###Arquivos de midia
+Em settings, criar a variável MEDIA_URL = '/media/', e MEDIA_ROOT = 'media'

@@ -123,3 +123,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     'estaticos',
 ]
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = 'media'
