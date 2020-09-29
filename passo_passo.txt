@@ -50,4 +50,8 @@ start server
 dentro do diretório cliente, criar o arquivo urls.py
 criar uma funç~;ao dentro da views.py CLIENTE
 
+###lendo clientes do banco
+criar um novo TEMPLATE person.html
+
+###criando um novo usuario
  
