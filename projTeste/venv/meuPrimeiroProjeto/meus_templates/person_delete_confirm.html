@@ -7,18 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-    <ul>
-    {% for people in person %}
-            <li>
-                <a href="{% url 'person_update' people.id %}">{{people.first_name}}</a>
-                <a href="{% url 'person_delete' people.id %}">Deletar</a>
-            </li>
-    {% endfor %}
-    </ul>
-    <br>
-
-<a href="{% url 'person_new'%}"> Novo_cliente</a>
 <body>
+    <h1>Tem certeza que deseja deletar a pessoa abaixo?</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Delete</button>
+    </form>
 
 </body>
 </html>
