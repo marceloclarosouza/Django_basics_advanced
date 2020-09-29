@@ -38,3 +38,16 @@ carregar arquivos estaticos em template.html usando {% load static %}
 
 ###Arquivos de midia
 Em settings, criar a variável MEDIA_URL = '/media/', e MEDIA_ROOT = 'media'
+no arquivo Models, criar o atributo photo= models.ImageField()
+Adicionar esse atributo ao banco de dados
+stop server
+python manage.py makemigrations
+python manage.py migrate
+start server
+
+
+###Criando um CRUD
+dentro do diretório cliente, criar o arquivo urls.py
+criar uma funç~;ao dentro da views.py CLIENTE
+
+ 
