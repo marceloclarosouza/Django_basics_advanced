@@ -10,6 +10,7 @@ cd Scripts
 activate ##ativando o ambiente virtual
 cd..
 pip install django ## instalar o django no env
+django-admin startproject gestao_clientes ## criar o projeto
 python manage.py runserver    ###executar o servidor
 ###
 ###
